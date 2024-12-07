@@ -45,7 +45,7 @@ def predict_price(airline, source_city, departure_time, stops, arrival_time, des
 
     # Make prediction
     prediction = model.predict(input_data)
-    return f"Estimated Price: {prediction[0]:.2f}"
+    return f"Estimated Price: {prediction[0]:.2f}$"
 
 # Define Gradio interface
 interface = gr.Interface(
